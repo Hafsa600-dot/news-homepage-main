@@ -1,0 +1,235 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&family=Open+Sans");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+}
+body {
+  font-size: 15px;
+  margin: 0;
+  font-family: "Inter", sans-serif;
+}
+.close-btn {
+  display: none;
+}
+main {
+  max-width: 960px;
+  margin: 0 auto;
+}
+.menu {
+  display: none;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+li {
+  margin: 10px;
+}
+
+.intro {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.intro img {
+  max-width: 100%;
+}
+.hero-sidenav {
+  margin-left: 20px;
+  background-color: hsl(240, 100%, 5%);
+  color: #fff;
+  padding: 15px;
+}
+.hero-sidenav p {
+  color: grey;
+  border-bottom: 0.5px solid grey;
+  padding-bottom: 50px;
+  margin: 9px;
+}
+
+.hero-text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flex-p {
+  width: 50%;
+  color: grey;
+}
+.flex-heading h2 {
+  font-size: 45px;
+  font-weight: 700;
+}
+button {
+  border: none;
+  outline: none;
+  padding: 15px 25px;
+  width: 250px;
+  color: #fff;
+  background-color: hsl(5, 85%, 63%);
+  font-size: 16px;
+  letter-spacing: 3px;
+  margin-right: 14px;
+}
+.hero-sidenav h3 {
+  /* color */
+  color: hsl(35, 77%, 62%);
+  font-size: 30px;
+}
+section {
+  display: flex;
+  margin-top: 20px;
+}
+
+section img {
+  width: 100px;
+  margin-right: 10px;
+}
+
+section .card {
+  display: flex;
+  width: 400px;
+  /* justify-content: space-between; */
+  align-items: center;
+  margin: 10px;
+}
+.special-number {
+  color: grey;
+  opacity: 0.5;
+  font-size: 40px;
+  margin: 15px;
+  margin-bottom: 10px;
+}
+
+.section-text h4 {
+  margin: 15px;
+  line-height: 21px;
+  font-weight: 600;
+}
+.section-text p {
+  margin: 0;
+  color: grey;
+}
+
+.lock {
+  overflow: hidden;
+}
+
+.backdrop {
+  display: flex;
+}
+
+@media (min-width: 961px) {
+  .backdrop {
+    display: flex !important;
+  }
+}
+@media (max-width: 960px) {
+  .close-btn {
+    display: block;
+  }
+  body {
+    overflow-x: hidden;
+  }
+
+  .backdrop {
+    display: none;
+  }
+  nav {
+    display: flex;
+    margin-bottom: 20px;
+  }
+  .intro {
+    display: block;
+    width: 90%;
+    margin: auto;
+  }
+  section.cards {
+    display: block;
+    width: 90%;
+    margin: auto;
+  }
+  .hero-text {
+    display: block;
+  }
+  .hero-sidenav {
+    margin: 0;
+  }
+
+  main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  section .card {
+    width: 300px;
+  }
+  .flex-heading {
+    font-size: 20px;
+  }
+  .flex-heading h2 {
+    font-size: 30px;
+  }
+  .flex-p {
+    width: 100%;
+  }
+  .break {
+    display: none;
+  }
+  button {
+    margin-bottom: 10px;
+    width: 60%;
+  }
+  .section-text {
+    margin-left: 20px;
+  }
+  .nav-links {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    height: 700px;
+    position: absolute;
+    top: -15px;
+    right: 0;
+    opacity: 1;
+    background-color: #fff;
+  }
+  .menu {
+    display: block;
+    object-fit: contain;
+    margin-right: 40px;
+    width: 50px;
+  }
+
+  .nav-link {
+    margin: 20px;
+  }
+  .close-btn {
+    width: 30px;
+    text-align: right;
+  }
+  .backdrop.show {
+    display: block;
+    width: 100%;
+    position: absolute;
+    height: 100%;
+    background: #0b0b13ab;
+  }
+}
