@@ -72,7 +72,7 @@ li {
   width: 50%;
   color: grey;
 }
-.flex-heading h2 {
+.heading h2 {
   font-size: 45px;
   font-weight: 700;
 }
@@ -181,10 +181,10 @@ section .card {
   section .card {
     width: 300px;
   }
-  .flex-heading {
+  .heading {
     font-size: 20px;
   }
-  .flex-heading h2 {
+  .heading h2 {
     font-size: 30px;
   }
   .flex-p {
