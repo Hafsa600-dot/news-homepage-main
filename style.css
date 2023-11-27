@@ -68,7 +68,7 @@ li {
   align-items: center;
 }
 
-.flex-p {
+.p {
   width: 50%;
   color: grey;
 }
@@ -187,7 +187,7 @@ section .card {
   .heading h2 {
     font-size: 30px;
   }
-  .flex-p {
+  .p {
     width: 100%;
   }
   .break {
